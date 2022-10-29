@@ -23,7 +23,7 @@
               <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse d-lg-flex justify-content-between" id="navbarNav">
+              <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item"><a href="#projects" class="nav-link">my projects</a></li>
                   <li class="nav-item"><a href="#about" class="nav-link">about (CV)</a></li>
@@ -61,12 +61,12 @@
         
         <section id="projects">
             <div id="projects_container" class="d-flex flex-row">
-                <div id="title_container" class="d-flex flex-column justify-content-center">
+                <div id="title_container">
                     <h2>My projects</h2>
                     <p>All projects are student assignments from Multimedia Design course at KEA.</p>
-                    <img alt="arrow pointing right" src="">
+                    <img id="arrow" alt="arrow pointing right" src="assets/arrow.svg">
                 </div>
-                <article class="project_card d-flex flex-column align-items-center">
+                <article class="project_card d-flex flex-column align-items-center" data-bs-toggle="modal" data-bs-target="#project">
                     <img alt="project image" src="assets/trial.png">
                     <div class="description_short">
                         <h3>Learning Bootstrap</h3>
@@ -74,7 +74,7 @@
                     </div>
                     <button data-bs-toggle="modal" data-bs-target="#project">read more</button>
                 </article>
-                <article class="project_card d-flex flex-column align-items-center">
+                <article class="project_card d-flex flex-column align-items-center" data-bs-toggle="modal" data-bs-target="#project">
                     <img alt="project image" src="assets/trial.png">
                     <div class="description_short">
                         <h3>Just JS: Hogwart's student list</h3>
@@ -82,7 +82,7 @@
                     </div>
                     <button data-bs-toggle="modal" data-bs-target="#project">read more</button>
                 </article>
-                <article class="project_card d-flex flex-column align-items-center">
+                <article class="project_card d-flex flex-column align-items-center" data-bs-toggle="modal" data-bs-target="#project">
                     <img alt="project image" src="assets/trial.png">
                     <div class="description_short">
                         <h3>Responsive design</h3>
@@ -90,7 +90,7 @@
                     </div>
                     <button data-bs-toggle="modal" data-bs-target="#project">read more</button>
                 </article>
-                <article class="project_card d-flex flex-column align-items-center">
+                <article class="project_card d-flex flex-column align-items-center" data-bs-toggle="modal" data-bs-target="#project">
                     <img alt="project image" src="assets/trial.png">
                     <div class="description_short">
                         <h3>World's worst calculator</h3>

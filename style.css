@@ -2,6 +2,8 @@
     --light: #ededed;
     --dark: #1d438a;
     --accent: #00F2E2;
+    --text: #2b2b2b;
+    --shadow: #515151;
 }
 
 /* general */
@@ -39,6 +41,7 @@ h1, h2, h3, h4, h5 {
     font-family: 'Anonymous Pro', monospace;
     font-weight: 400;
     line-height: 1.3;
+    color: var(--text);
   }
   
   h1 {
@@ -55,15 +58,28 @@ h1, h2, h3, h4, h5 {
   
   h5 {font-size: 1.25rem;}
 
+  p {color: var(--text);}
+
 /* navigation */
 
 nav {
     background-color: var(--light);
+    box-shadow: 0 0.1rem 1.2rem var(--shadow);
 }
 
 #logo {
-    height: 5rem;
+    height: 4rem;
     width: auto;
+    padding-right: 2rem;
+}
+
+nav a {
+    text-transform: uppercase;
+    margin-right: 1rem ;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--dark);
 }
 
 /* intro */
@@ -95,16 +111,25 @@ nav {
     min-width: 32vw;
     padding: 0 3rem;
     background-color: var(--accent);
+    box-shadow: 0.15rem 0 0.9rem var(--shadow);
+}
+
+#title_container h2 {
+    margin-top: 40%;
+}
+
+#arrow {
+    height: 5vh;
 }
 
 .project_card {
-    min-width: 25vw;
+    min-width: 27vw;
     padding-bottom: 1rem;
-    border-right: 1px solid var(--dark);
+    box-shadow: 0.2rem 0 0.8rem var(--shadow);
 }
 
 .description_short {
-    padding: 0 1rem;
+    padding: 0 1.5rem;
 }
 
 .description_short h3 {
@@ -123,7 +148,33 @@ nav {
 
 /* media queries */
 
-@media only screen and (min-width: 428px) and (max-width: 812px) {
+
+
+@media only screen and (min-width: 835px) and (max-width: 1366px) {
+
+    html {
+        font-size: 125%;
+    }
+
+    /* intro */
+
+    #intro img {
+        width: 80%;
+        height: auto;
+    }
+
+    /* projects */
+
+    #title_container, .project_card {
+        min-width: 50vw;
+    }
+}
+
+@media only screen and (min-width: 429px) and (max-width: 834px) {
+
+    html {
+        font-size: 125%;
+    }
 
     /* intro */
 
@@ -140,6 +191,9 @@ nav {
 }
 
 @media only screen and (max-width: 428px) {
+    html {
+        font-size: 125%;
+    }
 
     /* intro */
 
