@@ -68,15 +68,18 @@
                     </article>
                     <img id="arrow" alt="arrow pointing right" src="assets/arrow.svg">
                 </div>
-                <article class="project_card d-flex flex-column align-items-center" data-bs-toggle="modal" data-bs-target="#project">
-                    <img alt="project image" src="assets/trial.png">
-                    <div class="description_short">
-                        <h3>Learning Bootstrap</h3>
-                        <p>A simple website created using mostly Bootstrap.</p>
-                    </div>
-                    <button data-bs-toggle="modal" data-bs-target="#project">read more</button>
-                </article>
-                <article class="project_card d-flex flex-column align-items-center" data-bs-toggle="modal" data-bs-target="#project">
+                <template id="project-card-template">
+                    <article class="project_card d-flex flex-column align-items-center" data-bs-toggle="modal" data-bs-target="#project">
+                        <img alt="project image" src="">
+                        <div class="description_short">
+                            <h3>Learning Bootstrap</h3>
+                            <p>A simple website created using mostly Bootstrap.</p>
+                        </div>
+                        <button data-bs-toggle="modal" data-bs-target="#project" data-projectnick="">read more</button>
+                    </article>
+                </template>
+                
+                <!-- <article class="project_card d-flex flex-column align-items-center" data-bs-toggle="modal" data-bs-target="#project">
                     <img alt="project image" src="assets/trial.png">
                     <div class="description_short">
                         <h3>Just JS: Hogwart's student list</h3>
@@ -99,7 +102,7 @@
                         <p>A simply horrible calculator created mainly in JS.</p>
                     </div>
                     <button data-bs-toggle="modal" data-bs-target="#project">read more</button>
-                </article>
+                </article> -->
             </div>
         </section>
 
