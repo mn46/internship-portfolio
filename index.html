@@ -61,16 +61,18 @@
         
         <section id="projects">
             <div id="projects_container" class="d-flex flex-row">
-                <div id="title_container">
-                    <h2>My projects</h2>
-                    <p>All projects are student assignments from Multimedia Design course at KEA.</p>
+                <div id="title_container" class="d-flex flex-row align-items-center">
+                    <article class="title_description">
+                        <h2>My projects</h2>
+                        <p>All projects are student assignments from Multimedia Design course at KEA.</p>
+                    </article>
                     <img id="arrow" alt="arrow pointing right" src="assets/arrow.svg">
                 </div>
                 <article class="project_card d-flex flex-column align-items-center" data-bs-toggle="modal" data-bs-target="#project">
                     <img alt="project image" src="assets/trial.png">
                     <div class="description_short">
                         <h3>Learning Bootstrap</h3>
-                        <p>A simple website created mostly using Bootstrap.</p>
+                        <p>A simple website created using mostly Bootstrap.</p>
                     </div>
                     <button data-bs-toggle="modal" data-bs-target="#project">read more</button>
                 </article>
@@ -101,9 +103,22 @@
             </div>
         </section>
 
-        <section id="project" class="modal">
-            <div class="modal-body">
-                
+        <section id="project" class="modal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title">Modal title</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- pictures slideshow? -->
+                        <p class="project_description">Here will be the description of the project.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href=""><button>go to code on GitHub</button></a>
+                        <a href=""><button>see the project</button></a>
+                    </div>
+                </div>
             </div>
         </section>
 
