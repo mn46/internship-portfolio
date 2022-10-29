@@ -14,7 +14,9 @@
         "description-short": "A huge project focused on creating multiple functionalities using JavaScript.",
         "description-long": "The goal of the project was to design a system for Hogwarts School of Witchcraft and Wizardry, where the user would be able to display the list of all students, sort and filter them by various conditions and perform some actions on the students - eg. expel them or assign them a function of a prefect. Furthermore, the list of tasks was expanded by new functionalities: figuring out the students' blood status, basing on separate data of their families, and adding them to Inquisitorial Squad, where they could be only from Slytherin or pure-blood wizards. The final requirement was to create a “hack” function which breaks some functionalities and limited actions of the user.",
         "picture-card": "",
-        "picture-modal": "",
+        "picture-modal": [
+            "", ""
+        ],
         "github-link": "https://github.com/mn46/hogwart-student-list",
         "project-link": "https://mn46.github.io/hogwart-student-list/"
     },
