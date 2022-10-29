@@ -1,0 +1,33 @@
+{ "project": [
+    {
+        "project-name": "Responsive design",
+        "description-short": "This project was focused completely on adjusting a website to different screen sizes.",
+        "description-long": "The main focus of this project was responsive design. I used multiple media queries, grids, flexboxes and other functionalities to make the website comfortable to use on different screen sizes.",
+        "picture-card": "",
+        "picture-modal": "",
+        "github-link": "https://github.com/mn46/hogwart-student-list",
+        "project-link": "https://mn46.github.io/hogwart-student-list/"
+    },
+
+    {
+        "project-name": "Just JS: Hogwart's student list",
+        "description-short": "A huge project focused on creating multiple functionalities using JavaScript.",
+        "description-long": "The goal of the project was to design a system for Hogwarts School of Witchcraft and Wizardry, where the user would be able to display the list of all students, sort and filter them by various conditions and perform some actions on the students - eg. expel them or assign them a function of a prefect. Furthermore, the list of tasks was expanded by new functionalities: figuring out the students' blood status, basing on separate data of their families, and adding them to Inquisitorial Squad, where they could be only from Slytherin or pure-blood wizards. The final requirement was to create a “hack” function which breaks some functionalities and limited actions of the user.",
+        "picture-card": "",
+        "picture-modal": "",
+        "github-link": "https://github.com/mn46/hogwart-student-list",
+        "project-link": "https://mn46.github.io/hogwart-student-list/"
+    },
+
+    {
+        "project-name": "World's worst calculator",
+        "description-short": "A basic calculator written in JS.",
+        "description-long": "This is a calculator with a horrible UI - that is why it is the worst in the world. The goal was to practise some basic JavaScript skills, how to get user's inputs and use them to get desired result.",
+        "picture-card": "",
+        "picture-modal": "",
+        "github-link": "https://github.com/mn46/worlds-worst-calculator",
+        "project-link": "https://mn46.github.io/worlds-worst-calculator/"
+    }
+]
+    
+}
