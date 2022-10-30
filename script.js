@@ -51,9 +51,9 @@ function populateModal(project) {
   // adding data to modal
 
   document.querySelector("#project h2").textContent = project.projectName;
-  document.querySelector(".project_description").textContent = project.descriptionLong;
-  document.querySelector("a.github").textContent = project.githubLink;
-  document.querySelector("a.project-link").textContent = project.projectLink;
+  document.querySelector(".project_description p").textContent = project.descriptionLong;
+  document.querySelector(".github").href = project.githubLink;
+  document.querySelector(".project_link").href = project.projectLink;
 
   // creating image carousel
 
@@ -70,5 +70,5 @@ function populateModal(project) {
   });
 
   console.log("selecting carousel item");
-  document.querySelector(".carousel-item:nth-child(2)").classList.add("active");
+  document.querySelector(".carousel-item").classList.add("active");
 }
