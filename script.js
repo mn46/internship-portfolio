@@ -25,6 +25,8 @@ function start() {
       console.log(jsonData);
       jsonData.projects.forEach(addContent);
     });
+  document.querySelector(".proj_right").addEventListener("click", scrollRight);
+  document.querySelector(".proj_left").addEventListener("click", scrollLeft);
 }
 
 function addContent(project) {
@@ -71,4 +73,16 @@ function populateModal(project) {
 
   console.log("selecting carousel item");
   document.querySelector(".carousel-item").classList.add("active");
+}
+
+// scrolling the projects container
+
+function scrollRight() {
+  console.log("scroll right");
+  document.querySelector("#projects_container").scrollBy(1000, 0);
+}
+
+function scrollLeft() {
+  console.log("scroll left");
+  document.querySelector("#projects_container").scrollBy(-1000, 0);
 }
