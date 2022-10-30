@@ -1,7 +1,7 @@
-{ "project": [
+{ "projects": [
     {
         "projectName": "Responsive design",
-        "buttonInfo": "resp-des",
+        "buttonInfo": "respdes",
         "descriptionShort": "This project was focused completely on adjusting a website to different screen sizes.",
         "descriptionLong": "The main focus of this project was responsive design. I used multiple media queries, grids, flexboxes and other functionalities to make the website comfortable to use on different screen sizes.",
         "pictureCard": "assets/trial.png",
@@ -27,7 +27,7 @@
 
     {
         "projectName": "World's worst calculator",
-        "buttonInfo": "w-w-calc",
+        "buttonInfo": "wwcalc",
         "descriptionShort": "A basic calculator written in JS.",
         "descriptionLong": "This is a calculator with a horrible UI - that is why it is the worst in the world. The goal was to practise some basic JavaScript skills, how to get user's inputs and use them to get desired result.",
         "pictureCard": "assets/trial.png",
