@@ -1,18 +1,9 @@
 "use strict";
 
 // motionOne  link
-// import { animate, scroll, stagger, inView } from "https://cdn.skypack.dev/motion";
+import { animate, scroll, stagger, inView } from "https://cdn.skypack.dev/motion";
 
-// JSON object here, because I can't comment in JSON............
-// {
-//     "project-name": "Learning Bootstrap",
-//     "description-short": "A simple website created using mostly Bootstrap.",
-//     "description-long": "The goal of the project was to learn basics of Bootstrap and try to make a website using it as much as possible. Thanks to that I had a chance to explore its capabilities.",
-//     "picture-card": "",
-//     "picture-content": "",
-//     "github-link": "https://github.com/mn46/hogwart-student-list",
-//     "project-link": "https://mn46.github.io/hogwart-student-list/"
-// },
+// adding content
 
 window.addEventListener("DOMContentLoaded", start);
 
@@ -60,29 +51,27 @@ function populateModal(project) {
   // creating image carousel
 
   project.pictureModal.forEach((picture) => {
-    console.log(picture);
     const imageTemplate = document.querySelector("#carousel-picture").content;
     const imageClone = imageTemplate.cloneNode(true);
 
     imageClone.querySelector("img").src = picture;
 
     document.querySelector(".carousel-inner").appendChild(imageClone);
-
-    console.log("added picture");
   });
 
-  console.log("selecting carousel item");
   document.querySelector(".carousel-item").classList.add("active");
 }
 
 // scrolling the projects container
 
 function scrollRight() {
-  console.log("scroll right");
   document.querySelector("#projects_container").scrollBy(1000, 0);
 }
 
 function scrollLeft() {
-  console.log("scroll left");
   document.querySelector("#projects_container").scrollBy(-1000, 0);
 }
+
+// animations
+
+animate("body", { opacity: [0, 1] }, { duration: 0.8 });
