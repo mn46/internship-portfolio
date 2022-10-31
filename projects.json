@@ -2,7 +2,7 @@
     {
         "projectName": "Responsive design",
         "buttonInfo": "respdes",
-        "descriptionShort": "This project was focused completely on adjusting a website to different screen sizes.",
+        "descriptionShort": "A website adjusted to different screen sizes, coded from scratch (HTML, CSS and JS only).",
         "descriptionLong": "The main focus of this project was responsive design. I used multiple media queries, grids, flexboxes and other functionalities to make the website comfortable to use on different screen sizes.",
         "pictureCard": "assets/trial.png",
         "pictureModal": [
@@ -23,32 +23,6 @@
         ],
         "githubLink": "https://github.com/mn46/hogwart-student-list",
         "projectLink": "https://mn46.github.io/hogwart-student-list/"
-    },
-
-    {
-        "projectName": "World's worst calculator",
-        "buttonInfo": "wwcalc",
-        "descriptionShort": "A basic calculator written in JS.",
-        "descriptionLong": "This is a calculator with a horrible UI - that is why it is the worst in the world. The goal was to practise some basic JavaScript skills, how to get user's inputs and use them to get desired result.",
-        "pictureCard": "assets/trial.png",
-        "pictureModal": [
-            "assets/trial.png", "assets/trial.png", "assets/trial.png"
-        ],
-        "githubLink": "https://github.com/mn46/worlds-worst-calculator",
-        "projectLink": "https://mn46.github.io/worlds-worst-calculator/"
-    },
-
-    {
-        "projectName": "World's worst calculator",
-        "buttonInfo": "wwcalc",
-        "descriptionShort": "A basic calculator written in JS.",
-        "descriptionLong": "This is a calculator with a horrible UI - that is why it is the worst in the world. The goal was to practise some basic JavaScript skills, how to get user's inputs and use them to get desired result.",
-        "pictureCard": "assets/trial.png",
-        "pictureModal": [
-            "assets/trial.png", "assets/trial.png", "assets/trial.png"
-        ],
-        "githubLink": "https://github.com/mn46/worlds-worst-calculator",
-        "projectLink": "https://mn46.github.io/worlds-worst-calculator/"
     },
 
     {
