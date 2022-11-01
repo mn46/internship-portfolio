@@ -2,6 +2,7 @@
 
 // motionOne  link
 import { animate, scroll, stagger, inView } from "https://cdn.skypack.dev/motion";
+import { original, counter, loop } from "./type-ani.js";
 
 // adding content
 
@@ -18,6 +19,7 @@ function start() {
     });
   document.querySelector(".proj_right").addEventListener("click", scrollRight);
   document.querySelector(".proj_left").addEventListener("click", scrollLeft);
+  loop();
 }
 
 function addContent(project) {
@@ -72,10 +74,7 @@ function scrollLeft() {
 
 // animations
 
-const sequence = [
-  ["body", { opacity: [0, 1] }, { duration: 0.8 }],
-  ["h1", { opacity: [0, 1] }, { duration: 0.8 }],
-];
+"body", { opacity: [0, 1] }, { duration: 0.8 };
 
 // timeline(sequence, { duration: 1.6 });
 

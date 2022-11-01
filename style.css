@@ -23,7 +23,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-#intro, #projects, #about {
+#projects, #about {
     padding: 8rem 0;
 }
 
@@ -110,14 +110,20 @@ nav a {
 /* intro */
 
 #intro {
+    padding-top: 3rem;
     background-color: var(--dark);
+    height: 85vh;
+}
+
+#intro_text {
+    padding-bottom: 3rem;
 }
 
 #intro h1 {
     color: var(--accent);
 }
 
-#intro p, ul, li {
+#intro p {
     color: var(--light);
 }
 
