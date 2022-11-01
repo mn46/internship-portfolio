@@ -4,9 +4,9 @@
         "buttonInfo": "respdes",
         "descriptionShort": "A website adjusted to different screen sizes, coded from scratch (HTML, CSS and JS only).",
         "descriptionLong": "The main focus of this project was responsive design. I used multiple media queries, grids, flexboxes and other functionalities to make the website comfortable to use on different screen sizes.",
-        "pictureCard": "assets/trial.png",
+        "pictureCard": "assets/resp-card.png",
         "pictureModal": [
-            "assets/trial.png", "assets/trial.png", "assets/trial.png"
+            "assets/resp-card-1st.png", "assets/resp-card-2nd.png", "assets/resp-card-3rd.png"
         ],
         "githubLink": "https://github.com/mn46/responsive-design",
         "projectLink": "https://mn46.github.io/responsive-design/"
@@ -17,9 +17,9 @@
         "buttonInfo": "hogwarts",
         "descriptionShort": "A huge project focused on creating multiple functionalities using JavaScript.",
         "descriptionLong": "The goal of the project was to design a system for Hogwarts School of Witchcraft and Wizardry, where the user would be able to display the list of all students, sort and filter them by various conditions and perform some actions on the students - eg. expel them or assign them a function of a prefect. Furthermore, the list of tasks was expanded by new functionalities: figuring out the students' blood status, basing on separate data of their families, and adding them to Inquisitorial Squad, where they could be only from Slytherin or pure-blood wizards. The final requirement was to create a “hack” function which breaks some functionalities and limited actions of the user.",
-        "pictureCard": "assets/trial.png",
+        "pictureCard": "assets/hogwarts-card.png",
         "pictureModal": [
-            "assets/trial.png", "assets/trial.png", "assets/trial.png"
+            "assets/hogwarts-2nd.png", "assets/hogwarts-3rd.png", "assets/hogwarts-1st.png"
         ],
         "githubLink": "https://github.com/mn46/hogwart-student-list",
         "projectLink": "https://mn46.github.io/hogwart-student-list/"
@@ -30,9 +30,9 @@
         "buttonInfo": "wwcalc",
         "descriptionShort": "A basic calculator written in JS.",
         "descriptionLong": "This is a calculator with a horrible UI - that is why it is the worst in the world. The goal was to practise some basic JavaScript skills, how to get user's inputs and use them to get desired result.",
-        "pictureCard": "assets/trial.png",
+        "pictureCard": "assets/calculator-card.png",
         "pictureModal": [
-            "assets/trial.png", "assets/trial.png", "assets/trial.png"
+            "assets/calculator-1st.png", "assets/calculator-2nd.png"
         ],
         "githubLink": "https://github.com/mn46/worlds-worst-calculator",
         "projectLink": "https://mn46.github.io/worlds-worst-calculator/"

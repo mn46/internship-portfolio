@@ -334,6 +334,12 @@ footer a:hover {
     color: var(--light);
 }
 
+/* classes to use in JS */
+
+.invisible {
+    opacity: 0%;
+}
+
 /* media queries */
 
 @media only screen and (min-width: 835px) and (max-width: 992px) {

@@ -74,10 +74,4 @@ function scrollLeft() {
 
 // animations
 
-"body", { opacity: [0, 1] }, { duration: 0.8 };
-
-// timeline(sequence, { duration: 1.6 });
-
-// inView("h1", (info) => {
-//   animate(info.target, { opacity: [0, 1] }, { duration: 0.8 }, { delay: stagger(0, { start: 2 }) });
-// });
+animate("body", { opacity: [0, 1] }, { duration: 0.2 });
