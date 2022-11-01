@@ -30,7 +30,6 @@ function addContent(project) {
   cardClone.querySelector("h3").textContent = project.projectName;
   cardClone.querySelector("p").textContent = project.descriptionShort;
   cardClone.querySelector("button").dataset.projnick = project.buttonInfo;
-  console.log(project);
   //   event listener on button so that there's correct information in the modal
   cardClone.querySelector(".card_button").addEventListener("click", () => populateModal(project));
 
@@ -40,7 +39,6 @@ function addContent(project) {
 }
 
 function populateModal(project) {
-  console.log(project);
   // adding data to modal
 
   document.querySelector("#project h2").textContent = project.projectName;
@@ -74,4 +72,13 @@ function scrollLeft() {
 
 // animations
 
-animate("body", { opacity: [0, 1] }, { duration: 0.8 });
+const sequence = [
+  ["body", { opacity: [0, 1] }, { duration: 0.8 }],
+  ["h1", { opacity: [0, 1] }, { duration: 0.8 }],
+];
+
+// timeline(sequence, { duration: 1.6 });
+
+// inView("h1", (info) => {
+//   animate(info.target, { opacity: [0, 1] }, { duration: 0.8 }, { delay: stagger(0, { start: 2 }) });
+// });

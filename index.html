@@ -18,7 +18,7 @@
 <body>
     <header>
         <nav id="navbar" class="navbar navbar-light fixed-top navbar-expand-lg">
-            <div class="container">
+            <div class="container-fluid">
               <a href="index.html"><img id="logo"  class="navbar-brand" alt="logo" src="assets/logo.svg"></a>
               <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -32,14 +32,12 @@
               </div>
             </div>
           </nav>
-        <nav>
     </header>
 
     <main>
-        <section id="intro">
+        <section id="intro" class="container-fluid">
             <div id="intro_container" class="container">
-                <div id="row" class="row justify-content-between">
-                    <article id="intro_text" class="col-lg-6">
+                    <article id="intro_text">
                         <h1>Hi there!</h1>
                         <p>I'm Marta. I want to be a front-end developer.</p>
                         <!-- <ul>
@@ -53,7 +51,6 @@
                     <!-- <div class="image_container col-lg-4">
                         <img alt="Portrait picture of me" src="assets/billede.png">
                     </div> -->
-                </div>
             </div>
             
         </section>
@@ -61,7 +58,6 @@
         <section id="projects">
             <article class="title_description container">
                 <h2>My projects</h2>
-                <!-- <p>All projects are student assignments from Multimedia Design course at KEA.</p> -->
             </article>
             <div id="projects_scroll">
                 <button class="proj_left">
@@ -73,8 +69,8 @@
                             <article class="card_content grid justify-content-center">
                                 <img alt="project image" src="">
                                 <div class="description_short row">
-                                    <h3>Learning Bootstrap</h3>
-                                    <p>A simple website created using mostly Bootstrap.</p>
+                                    <h3></h3>
+                                    <p></p>
                                 </div>
                             </article>
                             <button class="card_button row justify-content-center" data-bs-toggle="modal" data-bs-target="#project" data-projnick="">read more</button>
@@ -116,7 +112,7 @@
                                 </div>
                                 <div class="project_description col-lg-7 d-flex flex-column">
                                     <p>Here will be the description of the project.</p>
-                                    <a href="" class="github"><button>go to code on GitHub</button></a>
+                                    <a href="" class="github"><button>check the code</button></a>
                                     <a href="" class="project_link"><button>see the project</button></a>
                                 </div>
                             </div>
@@ -130,10 +126,10 @@
             <div id="about_container" class="container">
                 <article id="about_me" class="col-lg-7">
                     <h2>About me & CV</h2>
-                    <p>I'm Marta and I am a Multimedia Design student at KEA. I chose front-end elective out of curiosity and I have been learning about coding, programming and creating websites.</p>
+                    <p>I'm Marta and I am a Multimedia Design student at KEA. I chose front-end elective out of curiosity and I happened to like it.</p>
                 </article>
                 <div class="row gx-3">
-                    <aside id="skills" class="d-flex flex-column col-lg-4">
+                    <aside id="skills" class="d-flex flex-column col-lg-4 col-12">
                         <div id="skills_container">
                             <div id="have_skills">
                                 <h3>I worked with:</h3>
@@ -148,7 +144,7 @@
                             </div>
                         </div>
                     </aside>
-                    <article id="education" class="container col-lg-7">
+                    <article id="education" class="container col-lg-7 col-12">
                         <h2>Education</h2>
                         <article class="education_card">
                             <p class="text_small">August 2021 - now</p>

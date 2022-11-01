@@ -133,7 +133,7 @@ section#projects {
 
 .proj_left, .proj_right {
     position: absolute;
-    left: 0;
+    padding: 0;
     top: 50%;
     background-color: transparent;
     opacity: 70%
@@ -147,8 +147,12 @@ section#projects {
     transition: 0.5s ease;
 }
 
+.proj_left {
+    left: 2rem;
+}
+
 .proj_right {
-    left: 93vw;
+    right: 2rem;
 }
 
 #arrow_left, #arrow_right {
@@ -187,7 +191,7 @@ section#projects {
 .project_card {
     border-radius: 0.5rem;
     overflow: hidden;
-    min-width: 25vw;
+    min-width: 23vw;
     padding: 0 0 1rem 0;
     background-color: var(--white);
     box-shadow: 0.1rem 0.1rem 1rem var(--shadow);
