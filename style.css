@@ -1,6 +1,7 @@
 :root {
     --light: #e6f1ff;
     --dark: #0d3070;
+    --dark-lighter: #163f8b;
     --accent: #8ab3ff;
     --accent-bg: #cedfff;
     --text: #262334;
@@ -58,8 +59,8 @@ h1, h2, h3, h4, h5 {
   
 h1 {
     margin-top: 0;
-    font-size: 5.653rem;
-    /* font-weight: 600; */
+    font-size: 4.5rem;
+    font-weight: 600;
 }
   
 h2 {
@@ -113,10 +114,7 @@ nav a {
     padding-top: 3rem;
     background-color: var(--dark);
     height: 85vh;
-}
-
-#intro_text {
-    padding-bottom: 3rem;
+    overflow: hidden;
 }
 
 #intro h1 {
@@ -125,6 +123,60 @@ nav a {
 
 #intro p {
     color: var(--light);
+}
+
+#intro .image_container {
+    position: relative;
+    width: 40vw;
+    height: 50vh;
+}
+
+.wave {
+    background-image: url('assets/wave.svg');
+    width: 20vw;
+    aspect-ratio: 20/7;
+    position: absolute;
+    z-index: 2;
+}
+
+.wave:first-child {
+    top: 85%;
+    left: 15%;
+    animation: swingUp 3s ease-in-out infinite;
+}
+
+.wave:nth-child(2) {
+    top: -5%;
+    left: -10%;
+    animation: swingUp 5s ease-in-out infinite;
+}
+
+.wave:nth-child(3) {
+    top: 25%;
+    left: 60%;
+    animation: swingUp 4s ease-in-out infinite;
+}
+
+.smiley:nth-child(4) {
+    top: 75%;
+    left: 37%;
+}
+
+.smiley:nth-child(5) {
+    top: -15%;
+    left: 12%;
+}
+
+.smiley:nth-child(6) {
+    top: 15%;
+    left: 82%;
+}
+
+.smiley {
+    position: absolute;
+    font-size: 1.5rem;
+    color: var(--accent);
+    z-index: 1;
 }
 
 /* projects */
@@ -154,11 +206,11 @@ section#projects {
 }
 
 .proj_left {
-    left: 2rem;
+    left: 1rem;
 }
 
 .proj_right {
-    right: 2rem;
+    right: 1rem;
 }
 
 #arrow_left, #arrow_right {
@@ -334,28 +386,58 @@ footer a:hover {
     color: var(--light);
 }
 
-/* classes to use in JS */
+/* animation(s) */
 
-.invisible {
-    opacity: 0%;
+@keyframes swingUp {
+    50% {transform: translateY(-40%);}
+    100% {transform: translateY(0);}
 }
 
 /* media queries */
 
 @media only screen and (min-width: 835px) and (max-width: 992px) {
 
-    html {
-        font-size: 125%;
-    }
-
     /* intro */
 
-    #intro img {
-        width: 80%;
-        height: auto;
+    #intro {
+        height: 95vh;
+    }
+
+    #intro_text {
+        text-align: center;
+        margin-bottom: 8vh;
+    }
+
+    .wave:first-child {
+        top: 65%;
+        left: 15%;
+    }
+    
+    .wave:nth-child(2) {
+        top: 0;
+        left: -10%;
+    }
+
+    .smiley:nth-child(4) {
+        top: 57%;
+        left: 37%;
+    }
+    
+    .smiley:nth-child(5) {
+        top: -7%;
+        left: 12%;
+    }
+    
+    .smiley:nth-child(6) {
+        top: 17%;
+        left: 82%;
     }
 
     /* projects */
+
+    #arrow_left, #arrow_right {
+        height: 4vh;
+    }
 
     .proj_right {
         left: 90vw;
@@ -369,18 +451,51 @@ footer a:hover {
 
 @media only screen and (min-width: 429px) and (max-width: 834px) {
 
-    html {
-        font-size: 125%;
-    }
-
     /* intro */
 
-    #intro img {
-        width: 80%;
-        height: auto;
+    #intro {
+        height: 95vh;
+    }
+
+    #intro_text {
+        text-align: center;
+        margin-bottom: 8vh;
+    }
+
+    .wave {
+        width: 35vw;
+    }
+
+    .wave:first-child {
+        top: 65%;
+        left: 5%;
+    }
+    
+    .wave:nth-child(2) {
+        top: 0;
+        left: -50%;
+    }
+
+    .smiley:nth-child(4) {
+        top: 57%;
+        left: 45%;
+    }
+    
+    .smiley:nth-child(5) {
+        top: -9%;
+        left: -6%;
+    }
+    
+    .smiley:nth-child(6) {
+        top: 15%;
+        left: 100%;
     }
 
     /* projects */
+
+    #arrow_left, #arrow_right {
+        height: 4vh;
+    }
 
     .proj_right {
         left: 83vw;
@@ -392,18 +507,60 @@ footer a:hover {
 }
 
 @media only screen and (max-width: 428px) {
-    html {
-        font-size: 125%;
-    }
 
     /* intro */
 
-    #intro img {
-        width: 80%;
-        height: auto;
+    #intro {
+        height: 95vh;
+    }
+
+    #intro_text {
+        text-align: center;
+        margin: 4vh 0 8vh 0;
+    }
+
+    h1 {
+        line-height: 95%;
+    }
+
+    .wave {
+        width: 38vw;
+    }
+
+    .smiley {
+        font-size: 1rem;
+    }
+
+    .wave:first-child {
+        top: 65%;
+        left: 5%;
+    }
+    
+    .wave:nth-child(2) {
+        top: 0;
+        left: -50%;
+    }
+
+    .smiley:nth-child(4) {
+        top: 57%;
+        left: 45%;
+    }
+    
+    .smiley:nth-child(5) {
+        top: -7%;
+        left: -6%;
+    }
+    
+    .smiley:nth-child(6) {
+        top: 19%;
+        left: 100%;
     }
 
     /* projects */
+
+    #arrow_left, #arrow_right {
+        height: 4vh;
+    }
 
     #title_container, .project_card {
         min-width: 90vw;

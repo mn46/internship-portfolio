@@ -35,15 +35,23 @@
     </header>
 
     <main>
-        <section id="intro" class="container-fluid d-flex align-items-end">
-            <div id="intro_container" class="container">
-                    <article id="intro_text">
+        <section id="intro" class="container-fluid d-flex align-items-center">
+            <div id="intro_container" class="container d-flex flex-column flex-lg-row align-items-center justify-content-between gx-3">
+                    <article id="intro_text" class="col-12 col-lg-7">
                         <h1>Hi there!</h1>
                         <p>I'm Marta and I am an entry-level front-end developer.</p>
                     </article>
-                    <!-- <div class="image_container col-lg-4">
-                        <img alt="Portrait picture of me" src="assets/billede.png">
-                    </div> -->
+                    <div class="image_container col-12 col-lg-4">
+                        <!-- <img alt="Portrait picture of me" src="assets/billede.png"> -->
+                        <!-- <div id="circle"> -->
+                            <div class="wave"></div>
+                            <div class="wave"></div>
+                            <div class="wave"></div>
+                            <div class="smiley">:)</div>
+                            <div class="smiley">:)</div>
+                            <div class="smiley">:)</div>
+                        <!-- </div> -->
+                    </div>
             </div>
             
         </section>
@@ -87,13 +95,7 @@
                         <div class="container-fluid">
                             <div class="row">
                                 <div id="carousel-controls" class="carousel slide col-lg-6" data-bs-ride="carousel">
-                                    <div class="carousel-inner">
-                                        <template id="carousel-picture">
-                                            <div class="carousel-item">
-                                                <img src="" class="d-block w-100" alt="">
-                                            </div>
-                                        </template>
-                                    </div>
+                                    <div class="carousel-inner"></div>
                                     <button class="carousel-control-prev" type="button" data-bs-target="#carousel-controls" data-bs-slide="prev">
                                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                         <span class="visually-hidden">Previous</span>
@@ -105,7 +107,7 @@
                                 </div>
                                 <div class="project_description col-lg-6 d-flex flex-column">
                                     <p>Here will be the description of the project.</p>
-                                    <div class="d-flex flex-lg-row justify-content-between">
+                                    <div class="d-flex flex-column flex-xl-row justify-content-between align-items-center">
                                         <a href="" class="github"><button>check the code</button></a>
                                         <a href="" class="project_link"><button>see the project</button></a>
                                     </div>
@@ -116,6 +118,12 @@
                 </div>
             </div>
         </section>
+
+        <template id="carousel-picture">
+            <div class="carousel-item">
+                <img src="" class="d-block w-100" alt="">
+            </div>
+        </template>
 
         <section id="about">
             <div id="about_container" class="container">

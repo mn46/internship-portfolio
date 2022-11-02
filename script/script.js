@@ -1,7 +1,5 @@
 "use strict";
 
-// motionOne  link
-import { animate, scroll, stagger, inView } from "https://cdn.skypack.dev/motion";
 import { original, counter, loop } from "./type-ani.js";
 
 // adding content
@@ -42,6 +40,7 @@ function addContent(project) {
 
 function populateModal(project) {
   // adding data to modal
+  console.log(this);
 
   document.querySelector("#project h2").textContent = project.projectName;
   document.querySelector(".project_description p").textContent = project.descriptionLong;
@@ -49,6 +48,9 @@ function populateModal(project) {
   document.querySelector(".project_link").href = project.projectLink;
 
   // creating image carousel
+  const slide = document.querySelector(".carousel-inner");
+
+  slide.innerHTML = "";
 
   project.pictureModal.forEach((picture) => {
     const imageTemplate = document.querySelector("#carousel-picture").content;
@@ -58,6 +60,7 @@ function populateModal(project) {
 
     document.querySelector(".carousel-inner").appendChild(imageClone);
   });
+  console.log(document.querySelector(".carousel-inner"));
 
   document.querySelector(".carousel-item").classList.add("active");
 }
@@ -71,7 +74,3 @@ function scrollRight() {
 function scrollLeft() {
   document.querySelector("#projects_container").scrollBy(-1000, 0);
 }
-
-// animations
-
-animate("body", { opacity: [0, 1] }, { duration: 0.2 });
