@@ -16,7 +16,7 @@
         "projectName": "Hogwart's student list",
         "buttonInfo": "hogwarts",
         "descriptionShort": "A huge project focused on creating multiple functionalities using JavaScript.",
-        "descriptionLong": "The goal of the project was to design a system for Hogwarts School of Witchcraft and Wizardry, where the user would be able to display the list of all students, sort and filter them by various conditions and perform some actions on the students - eg. expel them or assign them a function of a prefect. Furthermore, the list of tasks was expanded by new functionalities: figuring out the students' blood status, basing on separate data of their families, and adding them to Inquisitorial Squad, where they could be only from Slytherin or pure-blood wizards. The final requirement was to create a “hack” function which breaks some functionalities and limited actions of the user.",
+        "descriptionLong": "The goal of the project was to design a system for Hogwarts School of Witchcraft and Wizardry. The initial list of functionalities included filtering, sorting, expelling students and adding them to prefects list. Due to some radical changes in the school, each student needed a blood status which had to be concluded from separate set of data. It was later used to add 'pure-blood' students to the Inquisitorial Squad. The last task was to create a 'hack' function, break some functionalities and limit user's actions. More details are in the readme file on GitHub.",
         "pictureCard": "assets/hogwarts-card.png",
         "pictureModal": [
             "assets/hogwarts-2nd.png", "assets/hogwarts-3rd.png", "assets/hogwarts-1st.png"
@@ -29,7 +29,7 @@
         "projectName": "World's worst calculator",
         "buttonInfo": "wwcalc",
         "descriptionShort": "A basic calculator written in JS.",
-        "descriptionLong": "This is a calculator with a horrible UI - that is why it is the worst in the world. The goal was to practise some basic JavaScript skills, how to get user's inputs and use them to get desired result.",
+        "descriptionLong": "This is a calculator with basic mathematical operations and a horrible UI. The goal was to practise some basic JavaScript skills, how to get user's inputs and use them to get desired result.",
         "pictureCard": "assets/calculator-card.png",
         "pictureModal": [
             "assets/calculator-1st.png", "assets/calculator-2nd.png"

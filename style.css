@@ -20,7 +20,7 @@ html {
 }
 
 body {
-    padding-top: 5rem;
+    padding-top: 4rem;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -88,6 +88,7 @@ p {color: var(--text);}
 /* navigation */
 
 nav {
+    /* height: 4rem; */
     background-color: var(--low-opacity);
     backdrop-filter: blur(5px);
     box-shadow: 0 0.1rem 1.2rem var(--shadow);
@@ -111,9 +112,9 @@ nav a {
 /* intro */
 
 #intro {
-    padding-top: 3rem;
+    padding-top: 2rem;
     background-color: var(--dark);
-    height: 85vh;
+    height: 90vh;
     overflow: hidden;
 }
 
@@ -123,12 +124,15 @@ nav a {
 
 #intro p {
     color: var(--light);
+    animation: opacity 1.5s linear 1;
+
 }
 
 #intro .image_container {
     position: relative;
     width: 40vw;
     height: 50vh;
+    animation: opacity 2.3s linear 1;
 }
 
 .wave {
@@ -391,6 +395,12 @@ footer a:hover {
 @keyframes swingUp {
     50% {transform: translateY(-40%);}
     100% {transform: translateY(0);}
+}
+
+@keyframes opacity {
+    0% {opacity: 0%;}
+    80% {opacity: 0%;}
+    100% {opacity: 100%;}
 }
 
 /* media queries */
