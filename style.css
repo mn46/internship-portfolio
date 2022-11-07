@@ -135,50 +135,27 @@ nav a {
     animation: opacity 2.3s linear 1;
 }
 
-.wave {
-    background-image: url('assets/wave.svg');
-    width: 20vw;
-    aspect-ratio: 20/7;
-    position: absolute;
-    z-index: 2;
-}
-
-.wave:first-child {
-    top: 85%;
-    left: 15%;
+.smiley:first-child {
+    top: 75%;
+    left: 37%;
     animation: swingUp 3s ease-in-out infinite;
 }
 
-.wave:nth-child(2) {
-    top: -5%;
-    left: -10%;
+.smiley:nth-child(2) {
+    top: -10%;
+    left: -5%;
     animation: swingUp 5s ease-in-out infinite;
 }
 
-.wave:nth-child(3) {
-    top: 25%;
-    left: 60%;
-    animation: swingUp 4s ease-in-out infinite;
-}
-
-.smiley:nth-child(4) {
-    top: 75%;
-    left: 37%;
-}
-
-.smiley:nth-child(5) {
-    top: -15%;
-    left: 12%;
-}
-
-.smiley:nth-child(6) {
+.smiley:last-child {
     top: 15%;
     left: 82%;
+    animation: swingUp 4s ease-in-out infinite;
 }
 
 .smiley {
     position: absolute;
-    font-size: 1.5rem;
+    font-size: 3rem;
     color: var(--accent);
     z-index: 1;
 }
@@ -393,7 +370,7 @@ footer a:hover {
 /* animation(s) */
 
 @keyframes swingUp {
-    50% {transform: translateY(-40%);}
+    50% {transform: translateY(-15%);}
     100% {transform: translateY(0);}
 }
 
