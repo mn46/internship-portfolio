@@ -25,7 +25,7 @@ body {
 }
 
 #projects, #about {
-    padding: 8rem 0;
+    padding: 10rem 0;
 }
 
 img {
@@ -124,20 +124,17 @@ nav a {
 
 #intro p {
     color: var(--light);
-    animation: opacity 1.5s linear 1;
-
 }
 
 #intro .image_container {
     position: relative;
     width: 40vw;
     height: 50vh;
-    animation: opacity 2.3s linear 1;
 }
 
 .smiley:first-child {
-    top: 75%;
-    left: 37%;
+    top: 78%;
+    left: 40%;
     animation: swingUp 3s ease-in-out infinite;
 }
 
@@ -245,11 +242,13 @@ section#projects {
 }
 
 .description_short h3 {
+    text-align: center;
     margin-top: 1rem;
     margin-bottom: 0;
 }
 
 .description_short p {
+    text-align: center;
     margin: 1rem 0 1.5rem 0;
 }
 
@@ -289,7 +288,7 @@ section#projects {
 /* about */
 
 #about_me {
-    margin-bottom: 10rem;
+    margin-bottom: 15rem;
 }
 
 #skills {
@@ -376,12 +375,6 @@ footer a:hover {
 @keyframes swingUp {
     50% {transform: translateY(-15%);}
     100% {transform: translateY(0);}
-}
-
-@keyframes opacity {
-    0% {opacity: 0%;}
-    80% {opacity: 0%;}
-    100% {opacity: 100%;}
 }
 
 /* media queries */

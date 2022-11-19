@@ -1,5 +1,5 @@
 "use strict";
-import { animate, scroll, stagger, inView } from "https://cdn.skypack.dev/motion";
+import { animate, inView } from "https://cdn.skypack.dev/motion";
 // import { loop } from "./type-ani.js";
 
 // adding content
@@ -86,15 +86,39 @@ function loop(original) {
   }
 
   function delay(i) {
-    console.log(i);
-    setTimeout(() => (original.textContent = oldString.slice(0, i)), i * 100);
+    setTimeout(() => (original.textContent = oldString.slice(0, i)), i * 90);
     // i * 100, so that each iteration has longer delay; then it actually makes them appear one by one with 100 ms delay, not all at once; solution found at https://www.freecodecamp.org/news/thrown-for-a-loop-understanding-for-loops-and-timeouts-in-javascript-558d8255d8a4/
   }
 }
 
 // implementing animations
 
+// typing animation for all h2 headlines
 inView("h2", (info) => {
-  console.log(info);
   loop(info.target, 0);
+});
+
+// paragraph in "intro" section appears when in view, after "typing" animation
+inView("#intro p", (info) => {
+  animate(info.target, { opacity: [0, 1] }, { duration: 1, delay: 0.8 });
+});
+
+// smileys "intro" section appears when in view, after "typing" animation
+inView("#intro .image_container", (info) => {
+  animate(info.target, { opacity: [0, 1] }, { duration: 1, delay: 1.4 });
+});
+
+// scroll container with projects appears when in view, after "typing" animation
+inView("#projects_container", (info) => {
+  animate(info.target, { opacity: [0, 1] }, { duration: 1.5, delay: 0.6 });
+});
+
+// paragraph in "about" section appears when in view, after "typing" animation
+inView("#about_me p", (info) => {
+  animate(info.target, { opacity: [0, 1] }, { duration: 1.5, delay: 0.5 });
+});
+
+// education sections apear one by one when in view
+inView(".education_card", (info) => {
+  animate(info.target, { opacity: [0, 1] }, { duration: 1, delay: 0.5 });
 });
