@@ -20,7 +20,7 @@ html {
 }
 
 body {
-    padding-top: 4rem;
+    padding-top: 5rem;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -288,12 +288,16 @@ section#projects {
 
 /* about */
 
-#about_me, #skills {
+#about_me {
+    margin-bottom: 10rem;
+}
+
+#skills {
     margin-bottom: 6rem;
 }
 
 #about_me h2 {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 #skills_container {

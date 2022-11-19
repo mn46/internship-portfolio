@@ -1,6 +1,6 @@
 "use strict";
-
-import { original, counter, loop } from "./type-ani.js";
+import { animate, scroll, stagger, inView } from "https://cdn.skypack.dev/motion";
+// import { loop } from "./type-ani.js";
 
 // adding content
 
@@ -17,7 +17,7 @@ function start() {
     });
   document.querySelector(".proj_right").addEventListener("click", scrollRight);
   document.querySelector(".proj_left").addEventListener("click", scrollLeft);
-  loop();
+  loop(document.querySelector("#intro_text h1"), 0);
 }
 
 function addContent(project) {
@@ -65,12 +65,35 @@ function populateModal(project) {
   document.querySelector(".carousel-item").classList.add("active");
 }
 
-// scrolling the projects container
+// scrolling for the projects container
 
 function scrollRight() {
-  document.querySelector("#projects_container").scrollBy(1000, 0);
+  document.querySelector("#projects_container").scrollBy(500, 0);
 }
 
 function scrollLeft() {
-  document.querySelector("#projects_container").scrollBy(-1000, 0);
+  document.querySelector("#projects_container").scrollBy(-500, 0);
 }
+
+// animations
+
+// reusable typing animation
+
+function loop(original) {
+  let oldString = original.textContent;
+  for (let i = 0; i < oldString.length + 1; i++) {
+    delay(i);
+  }
+
+  function delay(i) {
+    console.log(i);
+    setTimeout(() => (original.textContent = oldString.slice(0, i)), i * 100);
+  }
+}
+
+// implementing animations
+
+inView("h2", (info) => {
+  console.log(info);
+  loop(info.target, 0);
+});
