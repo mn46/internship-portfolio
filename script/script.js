@@ -88,6 +88,7 @@ function loop(original) {
   function delay(i) {
     console.log(i);
     setTimeout(() => (original.textContent = oldString.slice(0, i)), i * 100);
+    // i * 100, so that each iteration has longer delay; then it actually makes them appear one by one with 100 ms delay, not all at once; solution found at https://www.freecodecamp.org/news/thrown-for-a-loop-understanding-for-loops-and-timeouts-in-javascript-558d8255d8a4/
   }
 }
 
